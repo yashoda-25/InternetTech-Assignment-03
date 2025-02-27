@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+
+    <style>
+
+        body>div.main {
+          width: 50vw;
+          height: 50vh;
+          position: absolute;
+        }
+
+        body>div.main:first-child {
+          background-color: yellowgreen;
+          top: 0;
+          right: 0;
+        }
+
+        body>div.main:nth-child(2) {
+          background-color: aqua;
+          top: 0;
+          left: 0;
+        }
+
+        body>div.main:nth-child(3) {
+          background-color: deeppink;
+          bottom: 0;
+          right: 0;
+        }
+
+        body>div.main:nth-child(4) {
+          background-color: yellow;
+          bottom: 0;
+          left: 0;
+        }
+
+        body>div.main>div {
+          background-color: white;
+          width: 10vw;
+          aspect-ratio: 1/1;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+          border-radius: 100%;
+        }
+
+        /* body>div.main>div>div {
+             width: 50vw;
+             aspect-ratio: 1/1;
+             position: absolute;
+         }*/
+
+        body>div.main>div>div {
+          background-color: purple;
+          width: 5vw;
+          aspect-ratio: 1/1;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+
+        body>div:nth-child(5) {
+          background-color: white;
+          width: 10vw;
+          aspect-ratio: 1/1;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+
+        body>div:nth-child(5)>div {
+          background-color: purple;
+          width: 5vw;
+          aspect-ratio: 1/1;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+          border-radius: 100%;
+        }
+
+        body>div.circle {
+          background-color: white;
+          width: 5vw;
+          aspect-ratio: 1/1;
+          position: absolute;
+        }
+
+        body>div.circle:nth-child(6) {
+          top: 0;
+          left: 0;
+          border-bottom-right-radius: 100%;
+        }
+
+        body>div.circle:nth-child(7) {
+          top: 0;
+          right: 0;
+          border-bottom-left-radius: 100%;
+        }
+
+        body>div.circle:nth-child(8) {
+          bottom: 0;
+          right: 0;
+          border-top-left-radius: 100%;
+        }
+
+        body>div.circle:nth-child(9) {
+          bottom: 0;
+          left: 0;
+          border-top-right-radius: 100%;
+        }
+
+        body>div.half {
+          background-color: white;
+          width: 6vw;
+          aspect-ratio: 1/1;
+          position: absolute;
+        }
+
+        body>div.half:nth-child(10) {
+          right: 0;
+          left: 0;
+          bottom: -6vh;
+          margin: auto;
+          border-radius: 100% 100% 0 0;
+        }
+
+        body>div.half:nth-child(11) {
+          right: 0;
+          left: 0;
+          top: -6vh;
+          margin: auto;
+          border-radius: 0 0 100% 100%;
+        }
+
+        body {
+          overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+      <div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div>
+        <div></div>
+      </div>
+    </div>
+
+    <div>
+      <div></div>
+    </div>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="half"></div>
+    <div class="half"></div>
+
+</body>
+</html>
