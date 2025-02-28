@@ -3,8 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Case 03</title>
+
+    <style>
+
+        #frame {
+            z-index: 1;
+            width: 200px;
+            aspect-ratio: 1 / 1;
+            border: 10px solid gray;
+            border-radius: 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #frame > div {
+            width: calc(100% - 20px);
+            aspect-ratio: 1 / 1;
+            border: 10px solid red;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        section > div {
+            width: 180px;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        section > div > span {
+            color: #EEEEEE;
+            text-align: center;
+            font-family: Arial, serif;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        section > div:first-child {
+            background: purple;
+        }
+
+        section > div:nth-child(2) {
+            background: deepskyblue;
+        }
+
+        section > div:nth-child(3) {
+            background: coral;
+        }
+
+    </style>
+
 </head>
 <body>
+    <div id="frame">
+        <div></div>
+    </div>
 
+    <section>
+        <div>
+            <span>Hello</span>
+        </div>
+        <div>
+            <span>Welcome To</span>
+        </div>
+        <div>
+            <span>Institute of Software Engineering</span>
+        </div>
+    </section>
 </body>
 </html>
